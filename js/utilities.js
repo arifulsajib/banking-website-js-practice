@@ -19,7 +19,7 @@ const setValue = (id, value) => {
 // validate input
 const validateInput = (id) => {
   const inputField = document.getElementById(id);
-  if (inputField.value == "" || parseFloat(inputField.value) < 0) {
+  if (inputField.value == "" || inputField.value < 0) {
     return false;
   } else {
     return true;
